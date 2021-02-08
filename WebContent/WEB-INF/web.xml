@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>VMSProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>vms.controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ProjectController</servlet-name>
+		<servlet-class>vms.controller.ProjectController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjectController</servlet-name>
+		<url-pattern>/Project</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>vms.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/User</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>AttendanceController</servlet-name>
+		<servlet-class>vms.controller.AttendanceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AttendanceController</servlet-name>
+		<url-pattern>/Attendance</url-pattern>
+	</servlet-mapping>
+	<session-config>
+		<session-timeout>
+		30
+		</session-timeout>
+	</session-config>
+
+</web-app>
